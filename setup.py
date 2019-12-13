@@ -2,15 +2,16 @@ from distutils.core import setup
 setup(
   name = 'pull-automator',         # How you named your package folder (MyLib)
   packages = ['pull-automator'],   # Chose the same as "name"
-  version = '0.1',      # Start with a small number and increase it with every change you make
+  version = '0.3',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Automates the process of pulling git updates to multiple projects',   # Give a short description about your library
   author = 'Matt Ackerman',                   # Type in your name
   author_email = 'ackerman.j.matt@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/Matt-Ackerman',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/Matt-Ackerman/pull_automator/archive/0.1.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/Matt-Ackerman/pull_automator/archive/0.3.tar.gz',    # I explain this later on
   keywords = ['git', 'pull', 'repo'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
+    'validators',
     'validators',
     'beautifulsoup4',
     'colorama',
